@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>sistema de login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,7 +44,7 @@
         <input type="text" id="username" name="username" required>
 
         <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="senha" required>
 
         <button type="button" onclick="login()">logar</button>
     </form>
@@ -55,10 +55,10 @@
             var password = document.getElementById('password').value;
 
             // Ejemplo básico de verificación (solo para demostración)
-            if (username === 'usuario' && password === 'contrasena') {
-                alert('Inicio de sesión exitoso');
+            if (username === 'usuario' && password === 'senha') {
+                console.log('sessao iniciada com sucesso ');
             } else {
-                alert('Error de inicio de sesión. Verifica tus credenciales.');
+                console.log('sessao nao iniciada');
             }
         }
     </script>
